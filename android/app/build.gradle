@@ -42,9 +42,8 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.artium_software_assignment"
-        minSdkVersion flutter.minSdkVersion
+        applicationId "com.artium_software_assignment"
+        minSdkVersion flutter.minSdkVersion // Retain this line
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -53,7 +52,6 @@ android {
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
         }
     }
@@ -64,5 +62,8 @@ flutter {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    // Specify the Kotlin version explicitly
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10"  // Use the latest Kotlin version
+    // Or use the version from the buildscript:
+    // implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
