@@ -36,4 +36,5 @@ flutter run
 ```
 
 ### Release App
-[Download the CSV file](https://raw.githubusercontent.com/prinzzy/Software-Assignment/app-release.apk)
+[Download the Example File](https://raw.githubusercontent.com/prinzzy/Software-Assignment/main/app-release.apk)
+
